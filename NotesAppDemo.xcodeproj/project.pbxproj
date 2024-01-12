@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		E2780E732B4F0BDA00758983 /* NotesAppDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2780E722B4F0BDA00758983 /* NotesAppDemoApp.swift */; };
 		E2780E752B4F0BDA00758983 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2780E742B4F0BDA00758983 /* ContentView.swift */; };
-		E2780E772B4F0BDA00758983 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2780E762B4F0BDA00758983 /* Item.swift */; };
 		E2780E792B4F0BDB00758983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2780E782B4F0BDB00758983 /* Assets.xcassets */; };
 		E2780E7C2B4F0BDB00758983 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2780E7B2B4F0BDB00758983 /* Preview Assets.xcassets */; };
 		E2780E872B4F0BDB00758983 /* NotesAppDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2780E862B4F0BDB00758983 /* NotesAppDemoTests.swift */; };
 		E2780E912B4F0BDB00758983 /* NotesAppDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2780E902B4F0BDB00758983 /* NotesAppDemoUITests.swift */; };
 		E2780E932B4F0BDB00758983 /* NotesAppDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2780E922B4F0BDB00758983 /* NotesAppDemoUITestsLaunchTests.swift */; };
+		E2780EA12B4F0BFD00758983 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2780EA02B4F0BFD00758983 /* Note.swift */; };
+		E2780EA32B4F0C2800758983 /* NoteCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2780EA22B4F0C2800758983 /* NoteCategory.swift */; };
+		E2780EA62B4F0D9E00758983 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2780EA52B4F0D9E00758983 /* Home.swift */; };
+		E2780EA82B4F363D00758983 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2780EA72B4F363D00758983 /* NotesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		E2780E6F2B4F0BDA00758983 /* NotesAppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesAppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2780E722B4F0BDA00758983 /* NotesAppDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAppDemoApp.swift; sourceTree = "<group>"; };
 		E2780E742B4F0BDA00758983 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E2780E762B4F0BDA00758983 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		E2780E782B4F0BDB00758983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2780E7B2B4F0BDB00758983 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2780E7D2B4F0BDB00758983 /* NotesAppDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotesAppDemo.entitlements; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		E2780E8C2B4F0BDB00758983 /* NotesAppDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesAppDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2780E902B4F0BDB00758983 /* NotesAppDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAppDemoUITests.swift; sourceTree = "<group>"; };
 		E2780E922B4F0BDB00758983 /* NotesAppDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAppDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E2780EA02B4F0BFD00758983 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		E2780EA22B4F0C2800758983 /* NoteCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCategory.swift; sourceTree = "<group>"; };
+		E2780EA52B4F0D9E00758983 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E2780EA72B4F363D00758983 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,10 @@
 		E2780E712B4F0BDA00758983 /* NotesAppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E2780EA42B4F0D7800758983 /* View */,
+				E2780E9F2B4F0BE800758983 /* Model */,
 				E2780E722B4F0BDA00758983 /* NotesAppDemoApp.swift */,
 				E2780E742B4F0BDA00758983 /* ContentView.swift */,
-				E2780E762B4F0BDA00758983 /* Item.swift */,
 				E2780E782B4F0BDB00758983 /* Assets.xcassets */,
 				E2780E7D2B4F0BDB00758983 /* NotesAppDemo.entitlements */,
 				E2780E7A2B4F0BDB00758983 /* Preview Content */,
@@ -130,6 +137,24 @@
 				E2780E922B4F0BDB00758983 /* NotesAppDemoUITestsLaunchTests.swift */,
 			);
 			path = NotesAppDemoUITests;
+			sourceTree = "<group>";
+		};
+		E2780E9F2B4F0BE800758983 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2780EA02B4F0BFD00758983 /* Note.swift */,
+				E2780EA22B4F0C2800758983 /* NoteCategory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2780EA42B4F0D7800758983 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2780EA52B4F0D9E00758983 /* Home.swift */,
+				E2780EA72B4F363D00758983 /* NotesView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2780EA32B4F0C2800758983 /* NoteCategory.swift in Sources */,
 				E2780E752B4F0BDA00758983 /* ContentView.swift in Sources */,
-				E2780E772B4F0BDA00758983 /* Item.swift in Sources */,
+				E2780EA82B4F363D00758983 /* NotesView.swift in Sources */,
+				E2780EA62B4F0D9E00758983 /* Home.swift in Sources */,
 				E2780E732B4F0BDA00758983 /* NotesAppDemoApp.swift in Sources */,
+				E2780EA12B4F0BFD00758983 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

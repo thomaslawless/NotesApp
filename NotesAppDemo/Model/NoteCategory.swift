@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import SwiftData
+
+@Model
+class NoteCategory{
+    var categoryTitle: String
+    //Relationship
+    @Relationship(deleteRule: .cascade, inverse: \Note.category)
+    var notes: [Note]?
+    
+    init(categoryTitle: String) {
+        self.categoryTitle = categoryTitle
+    }
+}
